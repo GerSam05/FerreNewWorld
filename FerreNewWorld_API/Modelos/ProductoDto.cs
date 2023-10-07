@@ -2,13 +2,8 @@
 
 namespace FerreNewWorld_API.Modelos
 {
-    public class Producto
+    public class ProductoDto
     {
-        [Required(ErrorMessage = "Campo Id es requerido")]
-        [MaxLength(7, ErrorMessage = "Campo Id no debe ser inferior a 0 ni superior a 9999999")]
-        [RegularExpression(@"^[0-9]+$", ErrorMessage = "El Campo Id sólo admite numeros")]
-        public string Id { get; set; }
-
         [Required(ErrorMessage = "Campo Codigo es requerido")]
         [MaxLength(30, ErrorMessage = "El Campo Código no debe exceder los 50 Caracteres")]
         [RegularExpression(@"^[a-zA-Z0-9 ]+$", ErrorMessage = "El Campo Código sólo admite letras y números")]
@@ -28,11 +23,11 @@ namespace FerreNewWorld_API.Modelos
         [Required(ErrorMessage = "Campo Categoria es requerido")]
         [MaxLength(30, ErrorMessage = "El Campo Categoría no debe exceder los 50 Caracteres")]
         [RegularExpression(@"^[a-zA-Z0-9 ]+$", ErrorMessage = "El Campo Categoría sólo admite letras y números")]
-        public string Categoria { get; set;}
+        public string Categoria { get; set; }
 
         [Required(ErrorMessage = "Campo Precio es requerido")]
         [MaxLength(7, ErrorMessage = "Campo Precio no debe ser inferior a 0$ ni superior a 9999999$")]
         [RegularExpression(@"^[0-9]+$", ErrorMessage = "El Campo Precio sólo admite números")]
-        public string Precio { get; set;}
+        public string Precio { get; set; }
     }
 }
