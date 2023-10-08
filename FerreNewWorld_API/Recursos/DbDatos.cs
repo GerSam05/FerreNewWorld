@@ -9,7 +9,7 @@ namespace FerreNewWorld_API.Recursos
 {
     public class DbDatos
     {
-        public static string cadenaConexion = "Server=DESKTOP-5QSAKAQ;DataBase=FerreNewWorld;User ID=sa;Password=Odrareg3105*;TrustServerCertificate=True;";
+        public static string cadenaConexion = "Server=;DataBase=FerreNewWorld;User ID=sa;Password=;TrustServerCertificate=True;";
         public static DataTable Listar(string nombreProcedimiento)
         {
             SqlConnection conexion = new(cadenaConexion);
