@@ -4,7 +4,7 @@
 </p>
 
 
-# 🔧🔩API Restfull FerreNewWorld
+# 🔧API Restfull FerreNewWorld
 
 ## Introducción
 - **FerreNewWorld** es una **API Restfull** de tipo almacén desarrollada a partir de la necesidad de mantener un registro actualizado del inventario de los productos que se comercializan por parte de la empresa Ferretera **FerreNewWorld**.
